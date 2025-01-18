@@ -217,7 +217,6 @@ nav ul li a:active::after,
 /* Home Page Section */
 .hero-section {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 4rem 5%;
@@ -284,7 +283,7 @@ nav ul li a:active::after,
 }
 
 .profile-picture {
-  flex: 1;
+  /* flex: 1; */
   max-width: 300px;
   border-radius: 50%;
 }
@@ -811,6 +810,7 @@ footer .go-to-top:hover {
 
   .about-section  {
     margin-top: 2.8rem;
+    padding: 0.4rem;
   }
 
 
@@ -854,12 +854,15 @@ footer .go-to-top:hover {
 
 
 .about-section .row .col .container-interests{
-  margin-right: -12rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* margin-right: -12rem; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* margin-left: 1rem; */
+  /* justify-content: center; */
+  width: 350px;
   align-items: center;
-  margin-left: 1rem;
+  /* background-color: #0899d2; */
 }
   
 

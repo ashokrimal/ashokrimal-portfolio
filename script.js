@@ -32,7 +32,36 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 function submitted(){
-  alert("Your message has been sent!!");
-  document.getElementById("form-group").reset();
-}
+  if(document.getElementById("name").value == "" ){
+    alert("Please enter the name!!");
+    return;
+  }
+
+  
+  else if( document.getElementById("email").value == "")
+    {
+      alert("Please enter the email!!");
+    }
+
+  else if( document.getElementById("email").value.indexOf("@") == -1 
+  || document.getElementById("email").value.indexOf(".") == -1)
+    {
+      alert("Please enter a valid email!!");
+      return;
+    }
+
+  else if( document.getElementById("message").value == ""){
+    alert("Please fill the message to send!!");
+    return;
+    }
+
+  else{
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      alert("Your message has been sent!!");
+      return;
+    }
+    
+  }
 
